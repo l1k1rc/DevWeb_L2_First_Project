@@ -1,0 +1,275 @@
+body {
+
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+img{
+	border-radius: 5px;
+	width: 170px;
+	height: 120px;
+}
+header{
+	background: #0073e3;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+h1{
+	color:black;
+	text-align: center;
+}
+#treeView {
+	background: white;
+	padding:10px;
+	margin: 10px auto;
+	overflow:scroll;
+	width:300px; 
+	height:120px; 
+	border:#000000 1px solid;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+#logger{
+	position: absolute;
+	margin-top: 10px;
+}
+#etuName{
+	text-align: center;
+}
+#case{
+	background: #3d9af5;
+	margin: 10px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+#form{
+	background: white;
+	margin-right: 43px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+#galery{
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	padding: 5%;
+	border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+#contain{
+	width: 400px;
+	margin:0 auto;
+	margin-top: 10%;
+}
+#inscrip{
+	width: 650px;
+	margin:0 auto;
+	margin-top: 10%;
+}
+#inscrip h1{
+	width: 30%;
+	margin:0 auto;
+	padding-bottom: 10px;
+}
+#contain h1{
+	width: 38%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#search{
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 130px;
+    background-color: white;
+    background-image: url('iconSearch.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-bottom: 16px;
+
+}
+#search:focus {
+    width: 100%;
+}
+#menu{
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #f1f1f1;
+      background: #fff;
+      box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+input[type=submit]{
+	background-color: #3d9af5;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+b{
+	color: black;
+}
+input[type=submit]:hover{
+	background-color: white;
+	color: #3d9af5;
+	border: 1px solid #3d9af5;
+}
+label{
+    cursor:pointer;
+}
+.select-style {
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa ;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+#resultOfSearch {
+	background: white;
+	padding:10px;
+	margin: 10px auto;
+	overflow:scroll;
+	width:600px; 
+	height:120px; 
+	border:#000000 1px solid;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.24);
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+/*JBUtton for menu*/
+.button {
+  border-radius: 4px;
+  background-color: #228cf4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  top: 0px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover{
+	width:98%;
+	color:black;
+	
+}
